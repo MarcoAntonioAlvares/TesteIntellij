@@ -21,6 +21,14 @@ public class Gafanhoto extends Pessoa{
         this.totAssistido = totAssistido;
     }
 
+    @Override
+    public String toString() {
+        return "Gafanhoto " + '\n' +
+                "login = " + login + '\n' +
+                "totAssistido = " + totAssistido + '\n'
+                ;
+    }
+
     public Gafanhoto(String nome, int idade, String sexo, String login) {
         super(nome, idade, sexo );
         this.login = login;
